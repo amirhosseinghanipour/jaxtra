@@ -24,7 +24,6 @@ setup(
         "Operating System :: MacOS",
         "Operating System :: Microsoft :: Windows",
         "Operating System :: POSIX :: Linux"
-        "License :: OSI Approved :: MIT License"
     ],
     python_requires=">=3.11.9",
 )
