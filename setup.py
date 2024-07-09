@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'JAXTRA'
 LONG_DESCRIPTION = 'A package for building and training neural networks with JAX.'
 
