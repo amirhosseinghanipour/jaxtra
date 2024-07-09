@@ -18,22 +18,16 @@ pip install jaxtra
 Here is a simple example of how to use JAXTRA to create and train a neural network:
 
 ```python
-from jaxtra import Dense, InputLayer
+from jaxtra import Input, Dense
 import jax
 
 #  Initialize random key
 key = jax.random.PRNGKey(0)
 
 # Define the model
-model = InputLayer(input_shape=(32,))
-model = Dense(units=64, activation='relu')
-model = Dense(units=10, activation='softmax')
-
-# Define the loss function
-loss = jax.scipy.special.softmax_cross_entropy
-
-# Define the optimizer
-optimizer = jax.optimizers.Adam(learning_rate=0.01)
+model = Input(input_shape=(32,))
+model = Dense(input_dim=64, output_dim=10 activation='relu')
+model = Dense(10, activation='softmax')
 
 # Compile the model
 model.compile(optimizer=optimizer, loss=loss)
