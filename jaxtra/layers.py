@@ -224,7 +224,6 @@ class Conv3D:
 
         return output
     
-
 class MaxPooling1D:
     """
     A 1D max pooling layer.
