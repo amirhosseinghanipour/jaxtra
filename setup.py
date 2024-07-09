@@ -21,7 +21,9 @@ setup(
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
-        "Operating System :: OS Independent"
+        "Operating System :: MacOS",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX :: Linux"
         "License :: OSI Approved :: MIT License"
     ],
     python_requires=">=3.11.9",
